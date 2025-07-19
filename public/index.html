@@ -16,6 +16,9 @@
         integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
         crossorigin="anonymous"></script>
 <style>
+    .hidden {
+        display: none !important;
+    }
     .active-nav {
         background-color: black;
         color: white !important;
@@ -186,8 +189,23 @@
         pronounceButton.addEventListener('click', () => {
           responsiveVoice.speak(entry.char, "Chinese Female");
         });
+        
+        const closeButton = document.createElement('button');
+        closeButton.textContent = '✖';
+        closeButton.style.position = 'absolute';
+        closeButton.style.top = '10px';
+        closeButton.style.right = '40px';
+        closeButton.style.border = 'none';
+        closeButton.style.background = 'transparent';
+        closeButton.style.cursor = 'pointer';
+        closeButton.style.fontSize = '1.5rem';
 
-            card.appendChild(radicalElement);
+        closeButton.addEventListener('click', () => {
+          card.classList.add('hidden')
+        });
+        
+        card.appendChild(closeButton);
+        card.appendChild(radicalElement);
         card.appendChild(pronounceButton);
         card.appendChild(charElement);
         card.appendChild(pinyinElement);
