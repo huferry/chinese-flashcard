@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Flashcard</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">My Flashcard</a>
+        <div class="collapse navbar-collapse">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link" href="?file=dict1.json">Part 1</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="?file=dict2.json">Part 2</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="?file=dict3.json">Part 3</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div id="main"></div>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+        crossorigin="anonymous"></script>
+<style>
+    .card {
+        position: relative;
+        overflow: hidden;
+    }
+
+    .pinyin, .meaning {
+        position: absolute;
+        left: 0;
+        right: 0;
+        text-align: center;
+        opacity: 0;
+        transition: opacity 0.3s ease;
+    }
+
+    .pinyin {
+        bottom: 40px;
+        font-size: 1.5rem;
+        color: #555;
+    }
+
+    .meaning {
+        bottom: 10px;
+        font-size: 1rem;
+        color: gray;
+    }
+
+    .card:hover .pinyin, .card:hover .meaning {
+        opacity: 1;
+    }
+
+    #main {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin-top: 20px; /* Optional: Add spacing from the navbar */
+    }
+</style>
+
+<script src="https://code.responsivevoice.org/responsivevoice.js"></script>
+<script>
+  // Get the file parameter from the URL
+  const urlParams = new URLSearchParams(window.location.search);
+  const file = urlParams.get('file') || 'dict1.json'; // Default to dict1.json if no file is specified
+
+  fetch(file)
+    .then(response => response.json())
+    .then(data => {
+      const dictionary = data;
+      const mainDiv = document.getElementById('main');
+
+      dictionary.forEach(item => {
+        // Create a card container
+        const card = document.createElement('div');
+        card.className = 'card text-center';
+        card.style.width = '200px'; // Example width
+        card.style.height = '300px'; // Maintain 2:3 ratio
+        card.style.margin = '10px';
+        card.style.display = 'inline-block';
+        card.style.position = 'relative'; // For positioning the button
+
+        // Add the Chinese character
+        const charElement = document.createElement('div');
+        charElement.textContent = item.char;
+        charElement.style.fontSize = '3rem'; // Large font size
+        charElement.style.lineHeight = '300px'; // Center vertically
+        charElement.style.height = '100%';
+
+        // Add the pinyin
+        const pinyinElement = document.createElement('div');
+        pinyinElement.className = 'pinyin';
+        pinyinElement.textContent = item.pinyin;
+
+        // Add the meaning
+        const meaningElement = document.createElement('div');
+        meaningElement.className = 'meaning';
+        meaningElement.textContent = item.meaning;
+
+        // Add the pronunciation button
+        const pronounceButton = document.createElement('button');
+        pronounceButton.textContent = '🔊';
+        pronounceButton.style.position = 'absolute';
+        pronounceButton.style.top = '10px';
+        pronounceButton.style.right = '10px';
+        pronounceButton.style.border = 'none';
+        pronounceButton.style.background = 'transparent';
+        pronounceButton.style.cursor = 'pointer';
+        pronounceButton.style.fontSize = '1.5rem';
+
+        // Add click event to pronounce the character
+        pronounceButton.addEventListener('click', () => {
+          responsiveVoice.speak(item.char, "Chinese Female");
+        });
+
+        // Append the button, character, pinyin, and meaning to the card
+        card.appendChild(pronounceButton);
+        card.appendChild(charElement);
+        card.appendChild(pinyinElement);
+        card.appendChild(meaningElement);
+
+        // Append the card to the main div
+        mainDiv.appendChild(card);
+      });
+    })
+    .catch(error => console.error('Error loading dictionary:', error));
+</script>
+
+</body>
+</html>
