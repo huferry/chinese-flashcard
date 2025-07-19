@@ -9,31 +9,17 @@
 </head>
 <body>
 
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <div class="container-fluid">
-        <a class="navbar-brand" href="#">My Flashcard</a>
-        <div class="collapse navbar-collapse">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                <li class="nav-item">
-                    <a class="nav-link" href="?file=dict1.json">Part 1</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="?file=dict2.json">Part 2</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="?file=dict3.json">Part 3</a>
-                </li>
-            </ul>
-        </div>
-    </div>
-</nav>
-
+<div id="navigation"></div>
 <div id="main"></div>
 <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
         crossorigin="anonymous"></script>
 <style>
+    .active-nav {
+        background-color: black;
+        color: white !important;
+    }
     .card {
         position: relative;
         overflow: hidden;
@@ -73,45 +59,120 @@
 </style>
 
 <script src="https://code.responsivevoice.org/responsivevoice.js"></script>
+
 <script>
-  // Get the file parameter from the URL
-  const urlParams = new URLSearchParams(window.location.search);
-  const file = urlParams.get('file') || 'dict1.json'; // Default to dict1.json if no file is specified
+  document.addEventListener('DOMContentLoaded', () => {
+    const navigationDiv = document.getElementById('navigation');
+    const mainDiv = document.getElementById('main');
 
-  fetch(file)
-    .then(response => response.json())
-    .then(data => {
-      const dictionary = data;
-      const mainDiv = document.getElementById('main');
+    fetch('/api/dict/index')
+      .then(response => response.json())
+      .then(data => {
+        if (data.length === 0) return;
 
-      dictionary.forEach(item => {
-        // Create a card container
+        const nav = document.createElement('nav');
+        nav.className = 'navbar navbar-expand-lg navbar-light bg-light';
+
+        const container = document.createElement('div');
+        container.className = 'container-fluid';
+
+        const brand = document.createElement('a');
+        brand.className = 'navbar-brand';
+        brand.href = '#';
+        brand.textContent = 'Dictionaries';
+        container.appendChild(brand);
+
+        const toggleButton = document.createElement('button');
+        toggleButton.className = 'navbar-toggler';
+        toggleButton.type = 'button';
+        toggleButton.setAttribute('data-bs-toggle', 'collapse');
+        toggleButton.setAttribute('data-bs-target', '#navbarNav');
+        toggleButton.innerHTML = '<span class="navbar-toggler-icon"></span>';
+        container.appendChild(toggleButton);
+
+        const collapseDiv = document.createElement('div');
+        collapseDiv.className = 'collapse navbar-collapse';
+        collapseDiv.id = 'navbarNav';
+
+        const navList = document.createElement('ul');
+        navList.className = 'navbar-nav';
+
+        data.forEach((item, index) => {
+          const navItem = document.createElement('li');
+          navItem.className = 'nav-item';
+
+          const navLink = document.createElement('a');
+          navLink.className = 'nav-link';
+          navLink.href = '#';
+          navLink.textContent = item.label;
+
+          navLink.addEventListener('click', (e) => {
+            e.preventDefault();
+            loadDictionary(item.name);
+
+            // Remove active class from all links
+            document.querySelectorAll('.nav-link').forEach(link => {
+              link.classList.remove('active-nav');
+            });
+
+            // Add active class to the clicked link
+            navLink.classList.add('active-nav');
+          });
+
+          navItem.appendChild(navLink);
+          navList.appendChild(navItem);
+
+          if (index === 0) {
+            loadDictionary(item.name);
+            navLink.classList.add('active-nav'); // Set the first item as active initially
+          }
+        });
+
+        collapseDiv.appendChild(navList);
+        container.appendChild(collapseDiv);
+        nav.appendChild(container);
+        navigationDiv.appendChild(nav);
+      })
+      .catch(error => console.error('Error fetching navigation data:', error));
+
+    function loadDictionary(name) {
+      fetch(`/api/dict/${name}`)
+        .then(response => response.json())
+        .then(dictionary => {
+          dictionary.sort((a, b) => a.radical.localeCompare(b.radical));
+          mainDiv.innerHTML = '';
+          dictionary.forEach(entry => {
         const card = document.createElement('div');
         card.className = 'card text-center';
-        card.style.width = '200px'; // Example width
-        card.style.height = '300px'; // Maintain 2:3 ratio
+            card.style.width = '200px';
+            card.style.height = '300px';
         card.style.margin = '10px';
         card.style.display = 'inline-block';
-        card.style.position = 'relative'; // For positioning the button
+            card.style.position = 'relative';
 
-        // Add the Chinese character
+            // Radical element
+            const radicalElement = document.createElement('div');
+            radicalElement.textContent = entry.radical;
+            radicalElement.style.position = 'absolute';
+            radicalElement.style.top = '10px';
+            radicalElement.style.left = '10px';
+            radicalElement.style.color = 'gray';
+            radicalElement.style.fontSize = '1rem';
+
         const charElement = document.createElement('div');
-        charElement.textContent = item.char;
-        charElement.style.fontSize = '3rem'; // Large font size
-        charElement.style.lineHeight = '300px'; // Center vertically
+            charElement.textContent = entry.char;
+            charElement.style.fontSize = '3rem';
+            charElement.style.lineHeight = '300px';
         charElement.style.height = '100%';
 
-        // Add the pinyin
         const pinyinElement = document.createElement('div');
         pinyinElement.className = 'pinyin';
-        pinyinElement.textContent = item.pinyin;
+            pinyinElement.textContent = entry.pinyin;
 
-        // Add the meaning
         const meaningElement = document.createElement('div');
         meaningElement.className = 'meaning';
-        meaningElement.textContent = item.meaning;
+            meaningElement.textContent = entry.meaning;
 
-        // Add the pronunciation button
         const pronounceButton = document.createElement('button');
         pronounceButton.textContent = '🔊';
         pronounceButton.style.position = 'absolute';
@@ -122,23 +183,22 @@
         pronounceButton.style.cursor = 'pointer';
         pronounceButton.style.fontSize = '1.5rem';
 
-        // Add click event to pronounce the character
         pronounceButton.addEventListener('click', () => {
-          responsiveVoice.speak(item.char, "Chinese Female");
+          responsiveVoice.speak(entry.char, "Chinese Female");
         });
 
-        // Append the button, character, pinyin, and meaning to the card
+            card.appendChild(radicalElement);
         card.appendChild(pronounceButton);
         card.appendChild(charElement);
         card.appendChild(pinyinElement);
         card.appendChild(meaningElement);
 
-        // Append the card to the main div
         mainDiv.appendChild(card);
       });
     })
-    .catch(error => console.error('Error loading dictionary:', error));
+        .catch(error => console.error('Error fetching dictionary:', error));
+    }
+  });
 </script>
-
 </body>
 </html>
