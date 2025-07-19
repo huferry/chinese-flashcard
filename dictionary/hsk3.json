@@ -1,0 +1,1704 @@
+{
+  "name": "hsk-3",
+  "label": "HSK 3",
+  "list": [
+    {
+      "char": "阿姨",
+      "pinyin": "āyí",
+      "meaning": "aunt",
+      "radical": "女"
+    },
+    {
+      "char": "啊",
+      "pinyin": "a",
+      "meaning": "ah",
+      "radical": "口"
+    },
+    {
+      "char": "矮",
+      "pinyin": "ǎi",
+      "meaning": "short",
+      "radical": "矢"
+    },
+    {
+      "char": "爱好",
+      "pinyin": "àihào",
+      "meaning": "hobby",
+      "radical": "爪"
+    },
+    {
+      "char": "安静",
+      "pinyin": "ānjìng",
+      "meaning": "quiet",
+      "radical": "宀"
+    },
+    {
+      "char": "班",
+      "pinyin": "bān",
+      "meaning": "class",
+      "radical": "王"
+    },
+    {
+      "char": "搬",
+      "pinyin": "bān",
+      "meaning": "move",
+      "radical": "扌"
+    },
+    {
+      "char": "办法",
+      "pinyin": "bànfǎ",
+      "meaning": "method",
+      "radical": "氵"
+    },
+    {
+      "char": "办公室",
+      "pinyin": "bàngōngshì",
+      "meaning": "office",
+      "radical": "宀"
+    },
+    {
+      "char": "半",
+      "pinyin": "bàn",
+      "meaning": "half",
+      "radical": "十"
+    },
+    {
+      "char": "帮忙",
+      "pinyin": "bāngmáng",
+      "meaning": "help",
+      "radical": "巾"
+    },
+    {
+      "char": "包",
+      "pinyin": "bāo",
+      "meaning": "bag",
+      "radical": "勹"
+    },
+    {
+      "char": "饱",
+      "pinyin": "bǎo",
+      "meaning": "full",
+      "radical": "食"
+    },
+    {
+      "char": "北方",
+      "pinyin": "běifāng",
+      "meaning": "north",
+      "radical": "匕"
+    },
+    {
+      "char": "被",
+      "pinyin": "bèi",
+      "meaning": "by (passive)",
+      "radical": "衣"
+    },
+    {
+      "char": "鼻子",
+      "pinyin": "bízi",
+      "meaning": "nose",
+      "radical": "鼻"
+    },
+    {
+      "char": "比赛",
+      "pinyin": "bǐsài",
+      "meaning": "competition",
+      "radical": "贝"
+    },
+    {
+      "char": "必须",
+      "pinyin": "bìxū",
+      "meaning": "must",
+      "radical": "心"
+    },
+    {
+      "char": "变化",
+      "pinyin": "biànhuà",
+      "meaning": "change",
+      "radical": "亻"
+    },
+    {
+      "char": "别人",
+      "pinyin": "biérén",
+      "meaning": "others",
+      "radical": "亻"
+    },
+    {
+      "char": "冰箱",
+      "pinyin": "bīngxiāng",
+      "meaning": "refrigerator",
+      "radical": "冫"
+    },
+    {
+      "char": "才",
+      "pinyin": "cái",
+      "meaning": "just",
+      "radical": "扌"
+    },
+    {
+      "char": "菜单",
+      "pinyin": "càidān",
+      "meaning": "menu",
+      "radical": "页"
+    },
+    {
+      "char": "参加",
+      "pinyin": "cānjiā",
+      "meaning": "participate",
+      "radical": "厶"
+    },
+    {
+      "char": "草",
+      "pinyin": "cǎo",
+      "meaning": "grass",
+      "radical": "艹"
+    },
+    {
+      "char": "层",
+      "pinyin": "céng",
+      "meaning": "floor",
+      "radical": "尸"
+    },
+    {
+      "char": "差",
+      "pinyin": "chà",
+      "meaning": "difference",
+      "radical": "工"
+    },
+    {
+      "char": "超市",
+      "pinyin": "chāoshì",
+      "meaning": "supermarket",
+      "radical": "走"
+    },
+    {
+      "char": "衬衫",
+      "pinyin": "chènshān",
+      "meaning": "shirt",
+      "radical": "衤"
+    },
+    {
+      "char": "成绩",
+      "pinyin": "chéngjì",
+      "meaning": "grade",
+      "radical": "禾"
+    },
+    {
+      "char": "城市",
+      "pinyin": "chéngshì",
+      "meaning": "city",
+      "radical": "土"
+    },
+    {
+      "char": "迟到",
+      "pinyin": "chídào",
+      "meaning": "be late",
+      "radical": "辶"
+    },
+    {
+      "char": "除了",
+      "pinyin": "chúle",
+      "meaning": "besides",
+      "radical": "阝"
+    },
+    {
+      "char": "船",
+      "pinyin": "chuán",
+      "meaning": "boat",
+      "radical": "舟"
+    },
+    {
+      "char": "春",
+      "pinyin": "chūn",
+      "meaning": "spring (season)",
+      "radical": "日"
+    },
+    {
+      "char": "词语",
+      "pinyin": "cíyǔ",
+      "meaning": "words",
+      "radical": "讠"
+    },
+    {
+      "char": "聪明",
+      "pinyin": "cōngmíng",
+      "meaning": "smart",
+      "radical": "耳"
+    },
+    {
+      "char": "打扫",
+      "pinyin": "dǎsǎo",
+      "meaning": "clean",
+      "radical": "扌"
+    },
+    {
+      "char": "打算",
+      "pinyin": "dǎsuàn",
+      "meaning": "plan",
+      "radical": "扌"
+    },
+    {
+      "char": "带",
+      "pinyin": "dài",
+      "meaning": "bring",
+      "radical": "巾"
+    },
+    {
+      "char": "担心",
+      "pinyin": "dānxīn",
+      "meaning": "worry",
+      "radical": "扌"
+    },
+    {
+      "char": "蛋糕",
+      "pinyin": "dàngāo",
+      "meaning": "cake",
+      "radical": "艹"
+    },
+    {
+      "char": "当然",
+      "pinyin": "dāngrán",
+      "meaning": "of course",
+      "radical": "小"
+    },
+    {
+      "char": "地",
+      "pinyin": "de",
+      "meaning": "particle (adverbial)",
+      "radical": "土"
+    },
+    {
+      "char": "灯",
+      "pinyin": "dēng",
+      "meaning": "lamp",
+      "radical": "火"
+    },
+    {
+      "char": "地方",
+      "pinyin": "dìfang",
+      "meaning": "place",
+      "radical": "土"
+    },
+    {
+      "char": "地铁",
+      "pinyin": "dìtiě",
+      "meaning": "subway",
+      "radical": "土"
+    },
+    {
+      "char": "地图",
+      "pinyin": "dìtú",
+      "meaning": "map",
+      "radical": "土"
+    },
+    {
+      "char": "电梯",
+      "pinyin": "diàntī",
+      "meaning": "elevator",
+      "radical": "阝"
+    },
+    {
+      "char": "电子邮件",
+      "pinyin": "diànzǐ yóujiàn",
+      "meaning": "email",
+      "radical": "电"
+    },
+    {
+      "char": "动物",
+      "pinyin": "dòngwù",
+      "meaning": "animal",
+      "radical": "犭"
+    },
+    {
+      "char": "短",
+      "pinyin": "duǎn",
+      "meaning": "short",
+      "radical": "矢"
+    },
+    {
+      "char": "段",
+      "pinyin": "duàn",
+      "meaning": "section",
+      "radical": "殳"
+    },
+    {
+      "char": "锻炼",
+      "pinyin": "duànliàn",
+      "meaning": "exercise",
+      "radical": "钅"
+    },
+    {
+      "char": "多么",
+      "pinyin": "duōme",
+      "meaning": "how (wonderful, etc.)",
+      "radical": "夕"
+    },
+    {
+      "char": "饿",
+      "pinyin": "è",
+      "meaning": "hungry",
+      "radical": "饣"
+    },
+    {
+      "char": "耳朵",
+      "pinyin": "ěrduo",
+      "meaning": "ear",
+      "radical": "耳"
+    },
+    {
+      "char": "发",
+      "pinyin": "fā",
+      "meaning": "send",
+      "radical": "又"
+    },
+    {
+      "char": "发烧",
+      "pinyin": "fāshāo",
+      "meaning": "fever",
+      "radical": "火"
+    },
+    {
+      "char": "发现",
+      "pinyin": "fāxiàn",
+      "meaning": "discover",
+      "radical": "见"
+    },
+    {
+      "char": "方便",
+      "pinyin": "fāngbiàn",
+      "meaning": "convenient",
+      "radical": "方"
+    },
+    {
+      "char": "放",
+      "pinyin": "fàng",
+      "meaning": "put",
+      "radical": "攵"
+    },
+    {
+      "char": "放心",
+      "pinyin": "fàngxīn",
+      "meaning": "rest assured",
+      "radical": "心"
+    },
+    {
+      "char": "分",
+      "pinyin": "fēn",
+      "meaning": "minute",
+      "radical": "刀"
+    },
+    {
+      "char": "附近",
+      "pinyin": "fùjìn",
+      "meaning": "nearby",
+      "radical": "阝"
+    },
+    {
+      "char": "复习",
+      "pinyin": "fùxí",
+      "meaning": "review",
+      "radical": "夂"
+    },
+    {
+      "char": "干净",
+      "pinyin": "gānjìng",
+      "meaning": "clean",
+      "radical": "干"
+    },
+    {
+      "char": "感冒",
+      "pinyin": "gǎnmào",
+      "meaning": "cold (illness)",
+      "radical": "心"
+    },
+    {
+      "char": "感兴趣",
+      "pinyin": "gǎn xìngqù",
+      "meaning": "be interested in",
+      "radical": "心"
+    },
+    {
+      "char": "刚才",
+      "pinyin": "gāngcái",
+      "meaning": "just now",
+      "radical": "刂"
+    },
+    {
+      "char": "个子",
+      "pinyin": "gèzi",
+      "meaning": "height",
+      "radical": "子"
+    },
+    {
+      "char": "根据",
+      "pinyin": "gēnjù",
+      "meaning": "according to",
+      "radical": "木"
+    },
+    {
+      "char": "跟",
+      "pinyin": "gēn",
+      "meaning": "with",
+      "radical": "足"
+    },
+    {
+      "char": "更",
+      "pinyin": "gèng",
+      "meaning": "more",
+      "radical": "曰"
+    },
+    {
+      "char": "公共汽车",
+      "pinyin": "gōnggòng qìchē",
+      "meaning": "bus",
+      "radical": "车"
+    },
+    {
+      "char": "公斤",
+      "pinyin": "gōngjīn",
+      "meaning": "kilogram",
+      "radical": "斤"
+    },
+    {
+      "char": "公园",
+      "pinyin": "gōngyuán",
+      "meaning": "park",
+      "radical": "八"
+    },
+    {
+      "char": "故事",
+      "pinyin": "gùshi",
+      "meaning": "story",
+      "radical": "讠"
+    },
+    {
+      "char": "刮风",
+      "pinyin": "guāfēng",
+      "meaning": "windy",
+      "radical": "风"
+    },
+    {
+      "char": "关",
+      "pinyin": "guān",
+      "meaning": "close",
+      "radical": "门"
+    },
+    {
+      "char": "关系",
+      "pinyin": "guānxì",
+      "meaning": "relationship",
+      "radical": "糸"
+    },
+    {
+      "char": "关心",
+      "pinyin": "guānxīn",
+      "meaning": "care about",
+      "radical": "心"
+    },
+    {
+      "char": "关于",
+      "pinyin": "guānyú",
+      "meaning": "about",
+      "radical": "一"
+    },
+    {
+      "char": "国家",
+      "pinyin": "guójiā",
+      "meaning": "country",
+      "radical": "囗"
+    },
+    {
+      "char": "过",
+      "pinyin": "guò",
+      "meaning": "pass",
+      "radical": "辶"
+    },
+    {
+      "char": "过去",
+      "pinyin": "guòqù",
+      "meaning": "past",
+      "radical": "辶"
+    },
+    {
+      "char": "还是",
+      "pinyin": "háishì",
+      "meaning": "or",
+      "radical": "辶"
+    },
+    {
+      "char": "害怕",
+      "pinyin": "hàipà",
+      "meaning": "afraid",
+      "radical": "忄"
+    },
+    {
+      "char": "航班",
+      "pinyin": "hángbān",
+      "meaning": "flight",
+      "radical": "舟"
+    },
+    {
+      "char": "黑板",
+      "pinyin": "hēibǎn",
+      "meaning": "blackboard",
+      "radical": "木"
+    },
+    {
+      "char": "后来",
+      "pinyin": "hòulái",
+      "meaning": "later",
+      "radical": "口"
+    },
+    {
+      "char": "护照",
+      "pinyin": "hùzhào",
+      "meaning": "passport",
+      "radical": "扌"
+    },
+    {
+      "char": "花",
+      "pinyin": "huā",
+      "meaning": "flower",
+      "radical": "艹"
+    },
+    {
+      "char": "画",
+      "pinyin": "huà",
+      "meaning": "draw",
+      "radical": "田"
+    },
+    {
+      "char": "坏",
+      "pinyin": "huài",
+      "meaning": "bad",
+      "radical": "土"
+    },
+    {
+      "char": "欢迎",
+      "pinyin": "huānyíng",
+      "meaning": "welcome",
+      "radical": "欠"
+    },
+    {
+      "char": "环境",
+      "pinyin": "huánjìng",
+      "meaning": "environment",
+      "radical": "土"
+    },
+    {
+      "char": "换",
+      "pinyin": "huàn",
+      "meaning": "change",
+      "radical": "扌"
+    },
+    {
+      "char": "黄河",
+      "pinyin": "Huáng Hé",
+      "meaning": "Yellow River",
+      "radical": "水"
+    },
+    {
+      "char": "回答",
+      "pinyin": "huídá",
+      "meaning": "answer",
+      "radical": "口"
+    },
+    {
+      "char": "会议",
+      "pinyin": "huìyì",
+      "meaning": "meeting",
+      "radical": "讠"
+    },
+    {
+      "char": "或者",
+      "pinyin": "huòzhě",
+      "meaning": "or",
+      "radical": "戈"
+    },
+    {
+      "char": "几乎",
+      "pinyin": "jīhū",
+      "meaning": "almost",
+      "radical": "冫"
+    },
+    {
+      "char": "机会",
+      "pinyin": "jīhuì",
+      "meaning": "opportunity",
+      "radical": "木"
+    },
+    {
+      "char": "极",
+      "pinyin": "jí",
+      "meaning": "extremely",
+      "radical": "木"
+    },
+    {
+      "char": "记得",
+      "pinyin": "jìde",
+      "meaning": "remember",
+      "radical": "讠"
+    },
+    {
+      "char": "季节",
+      "pinyin": "jìjié",
+      "meaning": "season",
+      "radical": "禾"
+    },
+    {
+      "char": "检查",
+      "pinyin": "jiǎnchá",
+      "meaning": "inspect",
+      "radical": "木"
+    },
+    {
+      "char": "简单",
+      "pinyin": "jiǎndān",
+      "meaning": "simple",
+      "radical": "竹"
+    },
+    {
+      "char": "见面",
+      "pinyin": "jiànmiàn",
+      "meaning": "meet",
+      "radical": "见"
+    },
+    {
+      "char": "健康",
+      "pinyin": "jiànkāng",
+      "meaning": "health",
+      "radical": "亻"
+    },
+    {
+      "char": "讲",
+      "pinyin": "jiǎng",
+      "meaning": "speak",
+      "radical": "讠"
+    },
+    {
+      "char": "教",
+      "pinyin": "jiāo",
+      "meaning": "teach",
+      "radical": "攵"
+    },
+    {
+      "char": "角",
+      "pinyin": "jiǎo",
+      "meaning": "corner",
+      "radical": "角"
+    },
+    {
+      "char": "脚",
+      "pinyin": "jiǎo",
+      "meaning": "foot",
+      "radical": "月"
+    },
+    {
+      "char": "接",
+      "pinyin": "jiē",
+      "meaning": "receive",
+      "radical": "扌"
+    },
+    {
+      "char": "街道",
+      "pinyin": "jiēdào",
+      "meaning": "street",
+      "radical": "行"
+    },
+    {
+      "char": "结婚",
+      "pinyin": "jiéhūn",
+      "meaning": "marry",
+      "radical": "纟"
+    },
+    {
+      "char": "结束",
+      "pinyin": "jiéshù",
+      "meaning": "end",
+      "radical": "纟"
+    },
+    {
+      "char": "节目",
+      "pinyin": "jiémù",
+      "meaning": "program",
+      "radical": "艹"
+    },
+    {
+      "char": "节日",
+      "pinyin": "jiérì",
+      "meaning": "festival",
+      "radical": "艹"
+    },
+    {
+      "char": "解决",
+      "pinyin": "jiějué",
+      "meaning": "solve",
+      "radical": "角"
+    },
+    {
+      "char": "借",
+      "pinyin": "jiè",
+      "meaning": "borrow",
+      "radical": "亻"
+    },
+    {
+      "char": "经常",
+      "pinyin": "jīngcháng",
+      "meaning": "often",
+      "radical": "纟"
+    },
+    {
+      "char": "经过",
+      "pinyin": "jīngguò",
+      "meaning": "pass by",
+      "radical": "辶"
+    },
+    {
+      "char": "久",
+      "pinyin": "jiǔ",
+      "meaning": "long (time)",
+      "radical": "丿"
+    },
+    {
+      "char": "旧",
+      "pinyin": "jiù",
+      "meaning": "old",
+      "radical": "日"
+    },
+    {
+      "char": "句子",
+      "pinyin": "jùzi",
+      "meaning": "sentence",
+      "radical": "口"
+    },
+    {
+      "char": "决定",
+      "pinyin": "juédìng",
+      "meaning": "decide",
+      "radical": "冫"
+    },
+    {
+      "char": "可爱",
+      "pinyin": "kě'ài",
+      "meaning": "cute",
+      "radical": "口"
+    },
+    {
+      "char": "渴",
+      "pinyin": "kě",
+      "meaning": "thirsty",
+      "radical": "氵"
+    },
+    {
+      "char": "刻",
+      "pinyin": "kè",
+      "meaning": "quarter (hour)",
+      "radical": "刂"
+    },
+    {
+      "char": "客人",
+      "pinyin": "kèrén",
+      "meaning": "guest",
+      "radical": "宀"
+    },
+    {
+      "char": "空调",
+      "pinyin": "kōngtiáo",
+      "meaning": "air conditioner",
+      "radical": "穴"
+    },
+    {
+      "char": "口",
+      "pinyin": "kǒu",
+      "meaning": "mouth",
+      "radical": "口"
+    },
+    {
+      "char": "哭",
+      "pinyin": "kū",
+      "meaning": "cry",
+      "radical": "氵"
+    },
+    {
+      "char": "裤子",
+      "pinyin": "kùzi",
+      "meaning": "pants",
+      "radical": "衤"
+    },
+    {
+      "char": "块",
+      "pinyin": "kuài",
+      "meaning": "piece",
+      "radical": "土"
+    },
+    {
+      "char": "快乐",
+      "pinyin": "kuàilè",
+      "meaning": "happy",
+      "radical": "忄"
+    },
+    {
+      "char": "筷子",
+      "pinyin": "kuàizi",
+      "meaning": "chopsticks",
+      "radical": "竹"
+    },
+    {
+      "char": "蓝",
+      "pinyin": "lán",
+      "meaning": "blue",
+      "radical": "艹"
+    },
+    {
+      "char": "老",
+      "pinyin": "lǎo",
+      "meaning": "old",
+      "radical": "老"
+    },
+    {
+      "char": "离开",
+      "pinyin": "líkāi",
+      "meaning": "leave",
+      "radical": "离"
+    },
+    {
+      "char": "礼物",
+      "pinyin": "lǐwù",
+      "meaning": "gift",
+      "radical": "礻"
+    },
+    {
+      "char": "历史",
+      "pinyin": "lìshǐ",
+      "meaning": "history",
+      "radical": "厂"
+    },
+    {
+      "char": "脸",
+      "pinyin": "liǎn",
+      "meaning": "face",
+      "radical": "月"
+    },
+    {
+      "char": "练习",
+      "pinyin": "liànxí",
+      "meaning": "practice",
+      "radical": "纟"
+    },
+    {
+      "char": "辆",
+      "pinyin": "liàng",
+      "meaning": "measure word for vehicles",
+      "radical": "车"
+    },
+    {
+      "char": "聊天",
+      "pinyin": "liáotiān",
+      "meaning": "chat",
+      "radical": "耳"
+    },
+    {
+      "char": "了解",
+      "pinyin": "liǎojiě",
+      "meaning": "understand",
+      "radical": "讠"
+    },
+    {
+      "char": "邻居",
+      "pinyin": "línjū",
+      "meaning": "neighbor",
+      "radical": "阝"
+    },
+    {
+      "char": "楼",
+      "pinyin": "lóu",
+      "meaning": "building",
+      "radical": "木"
+    },
+    {
+      "char": "绿",
+      "pinyin": "lǜ",
+      "meaning": "green",
+      "radical": "纟"
+    },
+    {
+      "char": "马",
+      "pinyin": "mǎ",
+      "meaning": "horse",
+      "radical": "马"
+    },
+    {
+      "char": "马上",
+      "pinyin": "mǎshàng",
+      "meaning": "immediately",
+      "radical": "马"
+    },
+    {
+      "char": "满意",
+      "pinyin": "mǎnyì",
+      "meaning": "satisfied",
+      "radical": "心"
+    },
+    {
+      "char": "帽子",
+      "pinyin": "màozi",
+      "meaning": "hat",
+      "radical": "巾"
+    },
+    {
+      "char": "米",
+      "pinyin": "mǐ",
+      "meaning": "rice",
+      "radical": "米"
+    },
+    {
+      "char": "面包",
+      "pinyin": "miànbāo",
+      "meaning": "bread",
+      "radical": "面"
+    },
+    {
+      "char": "明白",
+      "pinyin": "míngbai",
+      "meaning": "understand",
+      "radical": "日"
+    },
+    {
+      "char": "拿",
+      "pinyin": "ná",
+      "meaning": "take",
+      "radical": "扌"
+    },
+    {
+      "char": "奶奶",
+      "pinyin": "nǎinai",
+      "meaning": "grandmother",
+      "radical": "女"
+    },
+    {
+      "char": "南",
+      "pinyin": "nán",
+      "meaning": "south",
+      "radical": "十"
+    },
+    {
+      "char": "难",
+      "pinyin": "nán",
+      "meaning": "difficult",
+      "radical": "隹"
+    },
+    {
+      "char": "难过",
+      "pinyin": "nánguò",
+      "meaning": "sad",
+      "radical": "辶"
+    },
+    {
+      "char": "年级",
+      "pinyin": "niánjí",
+      "meaning": "grade (in school)",
+      "radical": "年"
+    },
+    {
+      "char": "年轻",
+      "pinyin": "niánqīng",
+      "meaning": "young",
+      "radical": "车"
+    },
+    {
+      "char": "鸟",
+      "pinyin": "niǎo",
+      "meaning": "bird",
+      "radical": "鸟"
+    },
+    {
+      "char": "努力",
+      "pinyin": "nǔlì",
+      "meaning": "hardworking",
+      "radical": "力"
+    },
+    {
+      "char": "爬山",
+      "pinyin": "páshān",
+      "meaning": "climb a mountain",
+      "radical": "爪"
+    },
+    {
+      "char": "盘子",
+      "pinyin": "pánzi",
+      "meaning": "plate",
+      "radical": "皿"
+    },
+    {
+      "char": "胖",
+      "pinyin": "pàng",
+      "meaning": "fat",
+      "radical": "月"
+    },
+    {
+      "char": "皮鞋",
+      "pinyin": "píxié",
+      "meaning": "leather shoes",
+      "radical": "皮"
+    },
+    {
+      "char": "啤酒",
+      "pinyin": "píjiǔ",
+      "meaning": "beer",
+      "radical": "口"
+    },
+    {
+      "char": "瓶子",
+      "pinyin": "píngzi",
+      "meaning": "bottle",
+      "radical": "瓦"
+    },
+    {
+      "char": "其实",
+      "pinyin": "qíshí",
+      "meaning": "actually",
+      "radical": "其"
+    },
+    {
+      "char": "其他",
+      "pinyin": "qítā",
+      "meaning": "other",
+      "radical": "亻"
+    },
+    {
+      "char": "骑",
+      "pinyin": "qí",
+      "meaning": "ride",
+      "radical": "马"
+    },
+    {
+      "char": "奇怪",
+      "pinyin": "qíguài",
+      "meaning": "strange",
+      "radical": "大"
+    },
+    {
+      "char": "起飞",
+      "pinyin": "qǐfēi",
+      "meaning": "take off",
+      "radical": "走"
+    },
+    {
+      "char": "清楚",
+      "pinyin": "qīngchu",
+      "meaning": "clear",
+      "radical": "氵"
+    },
+    {
+      "char": "秋",
+      "pinyin": "qiū",
+      "meaning": "autumn",
+      "radical": "禾"
+    },
+    {
+      "char": "裙子",
+      "pinyin": "qúnzi",
+      "meaning": "skirt",
+      "radical": "衤"
+    },
+    {
+      "char": "然后",
+      "pinyin": "ránhòu",
+      "meaning": "then",
+      "radical": "口"
+    },
+    {
+      "char": "热情",
+      "pinyin": "rèqíng",
+      "meaning": "enthusiastic",
+      "radical": "灬"
+    },
+    {
+      "char": "认为",
+      "pinyin": "rènwéi",
+      "meaning": "think",
+      "radical": "讠"
+    },
+    {
+      "char": "认真",
+      "pinyin": "rènzhēn",
+      "meaning": "serious",
+      "radical": "讠"
+    },
+    {
+      "char": "容易",
+      "pinyin": "róngyì",
+      "meaning": "easy",
+      "radical": "月"
+    },
+    {
+      "char": "如果",
+      "pinyin": "rúguǒ",
+      "meaning": "if",
+      "radical": "女"
+    },
+    {
+      "char": "伞",
+      "pinyin": "sǎn",
+      "meaning": "umbrella",
+      "radical": "人"
+    },
+    {
+      "char": "上网",
+      "pinyin": "shàngwǎng",
+      "meaning": "surf the internet",
+      "radical": "网"
+    },
+    {
+      "char": "生气",
+      "pinyin": "shēngqì",
+      "meaning": "angry",
+      "radical": "气"
+    },
+    {
+      "char": "声音",
+      "pinyin": "shēngyīn",
+      "meaning": "sound",
+      "radical": "音"
+    },
+    {
+      "char": "世界",
+      "pinyin": "shìjiè",
+      "meaning": "world",
+      "radical": "丗"
+    },
+    {
+      "char": "试",
+      "pinyin": "shì",
+      "meaning": "try",
+      "radical": "讠"
+    },
+    {
+      "char": "瘦",
+      "pinyin": "shòu",
+      "meaning": "thin",
+      "radical": "疒"
+    },
+    {
+      "char": "叔叔",
+      "pinyin": "shūshu",
+      "meaning": "uncle",
+      "radical": "又"
+    },
+    {
+      "char": "舒服",
+      "pinyin": "shūfu",
+      "meaning": "comfortable",
+      "radical": "心"
+    },
+    {
+      "char": "树",
+      "pinyin": "shù",
+      "meaning": "tree",
+      "radical": "木"
+    },
+    {
+      "char": "数学",
+      "pinyin": "shùxué",
+      "meaning": "mathematics",
+      "radical": "攵"
+    },
+    {
+      "char": "刷牙",
+      "pinyin": "shuāyá",
+      "meaning": "brush teeth",
+      "radical": "刂"
+    },
+    {
+      "char": "双",
+      "pinyin": "shuāng",
+      "meaning": "pair",
+      "radical": "又"
+    },
+    {
+      "char": "水平",
+      "pinyin": "shuǐpíng",
+      "meaning": "level",
+      "radical": "水"
+    },
+    {
+      "char": "司机",
+      "pinyin": "sījī",
+      "meaning": "driver",
+      "radical": "口"
+    },
+    {
+      "char": "太阳",
+      "pinyin": "tàiyáng",
+      "meaning": "sun",
+      "radical": "日"
+    },
+    {
+      "char": "糖",
+      "pinyin": "táng",
+      "meaning": "sugar",
+      "radical": "米"
+    },
+    {
+      "char": "特别",
+      "pinyin": "tèbié",
+      "meaning": "special",
+      "radical": "牛"
+    },
+    {
+      "char": "疼",
+      "pinyin": "téng",
+      "meaning": "pain",
+      "radical": "疒"
+    },
+    {
+      "char": "提高",
+      "pinyin": "tígāo",
+      "meaning": "improve",
+      "radical": "扌"
+    },
+    {
+      "char": "体育",
+      "pinyin": "tǐyù",
+      "meaning": "physical education",
+      "radical": "月"
+    },
+    {
+      "char": "甜",
+      "pinyin": "tián",
+      "meaning": "sweet",
+      "radical": "甘"
+    },
+    {
+      "char": "条",
+      "pinyin": "tiáo",
+      "meaning": "measure word for long objects",
+      "radical": "木"
+    },
+    {
+      "char": "同事",
+      "pinyin": "tóngshì",
+      "meaning": "colleague",
+      "radical": "口"
+    },
+    {
+      "char": "同意",
+      "pinyin": "tóngyì",
+      "meaning": "agree",
+      "radical": "讠"
+    },
+    {
+      "char": "头发",
+      "pinyin": "tóufa",
+      "meaning": "hair",
+      "radical": "页"
+    },
+    {
+      "char": "突然",
+      "pinyin": "tūrán",
+      "meaning": "suddenly",
+      "radical": "犬"
+    },
+    {
+      "char": "图书馆",
+      "pinyin": "túshūguǎn",
+      "meaning": "library",
+      "radical": "囗"
+    },
+    {
+      "char": "腿",
+      "pinyin": "tuǐ",
+      "meaning": "leg",
+      "radical": "月"
+    },
+    {
+      "char": "完成",
+      "pinyin": "wánchéng",
+      "meaning": "complete",
+      "radical": "宀"
+    },
+    {
+      "char": "碗",
+      "pinyin": "wǎn",
+      "meaning": "bowl",
+      "radical": "石"
+    },
+    {
+      "char": "万",
+      "pinyin": "wàn",
+      "meaning": "ten thousand",
+      "radical": "一"
+    },
+    {
+      "char": "忘记",
+      "pinyin": "wàngjì",
+      "meaning": "forget",
+      "radical": "心"
+    },
+    {
+      "char": "为",
+      "pinyin": "wèi",
+      "meaning": "for",
+      "radical": "丶"
+    },
+    {
+      "char": "为了",
+      "pinyin": "wèile",
+      "meaning": "in order to",
+      "radical": "丶"
+    },
+    {
+      "char": "位",
+      "pinyin": "wèi",
+      "meaning": "measure word for people",
+      "radical": "亻"
+    },
+    {
+      "char": "文化",
+      "pinyin": "wénhuà",
+      "meaning": "culture",
+      "radical": "文"
+    },
+    {
+      "char": "西",
+      "pinyin": "xī",
+      "meaning": "west",
+      "radical": "襾"
+    },
+    {
+      "char": "习惯",
+      "pinyin": "xíguàn",
+      "meaning": "habit",
+      "radical": "习"
+    },
+    {
+      "char": "洗手间",
+      "pinyin": "xǐshǒujiān",
+      "meaning": "restroom",
+      "radical": "氵"
+    },
+    {
+      "char": "夏",
+      "pinyin": "xià",
+      "meaning": "summer",
+      "radical": "夂"
+    },
+    {
+      "char": "先",
+      "pinyin": "xiān",
+      "meaning": "first",
+      "radical": "儿"
+    },
+    {
+      "char": "相信",
+      "pinyin": "xiāngxìn",
+      "meaning": "believe",
+      "radical": "亻"
+    },
+    {
+      "char": "香蕉",
+      "pinyin": "xiāngjiāo",
+      "meaning": "banana",
+      "radical": "艹"
+    },
+    {
+      "char": "向",
+      "pinyin": "xiàng",
+      "meaning": "towards",
+      "radical": "口"
+    },
+    {
+      "char": "像",
+      "pinyin": "xiàng",
+      "meaning": "like",
+      "radical": "亻"
+    },
+    {
+      "char": "小心",
+      "pinyin": "xiǎoxīn",
+      "meaning": "be careful",
+      "radical": "小"
+    },
+    {
+      "char": "校长",
+      "pinyin": "xiàozhǎng",
+      "meaning": "principal",
+      "radical": "木"
+    },
+    {
+      "char": "新闻",
+      "pinyin": "xīnwén",
+      "meaning": "news",
+      "radical": "文"
+    },
+    {
+      "char": "新鲜",
+      "pinyin": "xīnxiān",
+      "meaning": "fresh",
+      "radical": "斤"
+    },
+    {
+      "char": "信用卡",
+      "pinyin": "xìnyòngkǎ",
+      "meaning": "credit card",
+      "radical": "亻"
+    },
+    {
+      "char": "行李箱",
+      "pinyin": "xínglǐxiāng",
+      "meaning": "suitcase",
+      "radical": "行"
+    },
+    {
+      "char": "熊猫",
+      "pinyin": "xióngmāo",
+      "meaning": "panda",
+      "radical": "犭"
+    },
+    {
+      "char": "需要",
+      "pinyin": "xūyào",
+      "meaning": "need",
+      "radical": "雨"
+    },
+    {
+      "char": "选择",
+      "pinyin": "xuǎnzé",
+      "meaning": "choose",
+      "radical": "辶"
+    },
+    {
+      "char": "要求",
+      "pinyin": "yāoqiú",
+      "meaning": "require",
+      "radical": "木"
+    },
+    {
+      "char": "爷爷",
+      "pinyin": "yéye",
+      "meaning": "grandfather",
+      "radical": "父"
+    },
+    {
+      "char": "一定",
+      "pinyin": "yídìng",
+      "meaning": "certainly",
+      "radical": "宀"
+    },
+    {
+      "char": "一共",
+      "pinyin": "yígòng",
+      "meaning": "altogether",
+      "radical": "一"
+    },
+    {
+      "char": "一样",
+      "pinyin": "yíyàng",
+      "meaning": "same",
+      "radical": "木"
+    },
+    {
+      "char": "一般",
+      "pinyin": "yìbān",
+      "meaning": "generally",
+      "radical": "舟"
+    },
+    {
+      "char": "一直",
+      "pinyin": "yìzhí",
+      "meaning": "always",
+      "radical": "目"
+    },
+    {
+      "char": "音乐",
+      "pinyin": "yīnyuè",
+      "meaning": "music",
+      "radical": "音"
+    },
+    {
+      "char": "银行",
+      "pinyin": "yínháng",
+      "meaning": "bank",
+      "radical": "钅"
+    },
+    {
+      "char": "饮料",
+      "pinyin": "yǐnliào",
+      "meaning": "beverage",
+      "radical": "饣"
+    },
+    {
+      "char": "应该",
+      "pinyin": "yīnggāi",
+      "meaning": "should",
+      "radical": "广"
+    },
+    {
+      "char": "影响",
+      "pinyin": "yǐngxiǎng",
+      "meaning": "influence",
+      "radical": "彡"
+    },
+    {
+      "char": "用",
+      "pinyin": "yòng",
+      "meaning": "use",
+      "radical": "用"
+    },
+    {
+      "char": "游戏",
+      "pinyin": "yóuxì",
+      "meaning": "game",
+      "radical": "辶"
+    },
+    {
+      "char": "有名",
+      "pinyin": "yǒumíng",
+      "meaning": "famous",
+      "radical": "口"
+    },
+    {
+      "char": "又",
+      "pinyin": "yòu",
+      "meaning": "again",
+      "radical": "又"
+    },
+    {
+      "char": "遇到",
+      "pinyin": "yùdào",
+      "meaning": "encounter",
+      "radical": "辶"
+    },
+    {
+      "char": "月亮",
+      "pinyin": "yuèliang",
+      "meaning": "moon",
+      "radical": "月"
+    },
+    {
+      "char": "越",
+      "pinyin": "yuè",
+      "meaning": "the more",
+      "radical": "走"
+    },
+    {
+      "char": "站",
+      "pinyin": "zhàn",
+      "meaning": "station",
+      "radical": "立"
+    },
+    {
+      "char": "长",
+      "pinyin": "zhǎng",
+      "meaning": "grow",
+      "radical": "长"
+    },
+    {
+      "char": "着急",
+      "pinyin": "zháojí",
+      "meaning": "anxious",
+      "radical": "目"
+    },
+    {
+      "char": "照顾",
+      "pinyin": "zhàogù",
+      "meaning": "take care of",
+      "radical": "灬"
+    },
+    {
+      "char": "照片",
+      "pinyin": "zhàopiàn",
+      "meaning": "photo",
+      "radical": "灬"
+    },
+    {
+      "char": "只",
+      "pinyin": "zhǐ",
+      "meaning": "only",
+      "radical": "口"
+    },
+    {
+      "char": "中间",
+      "pinyin": "zhōngjiān",
+      "meaning": "middle",
+      "radical": "丨"
+    },
+    {
+      "char": "中文",
+      "pinyin": "zhōngwén",
+      "meaning": "Chinese language",
+      "radical": "文"
+    },
+    {
+      "char": "终于",
+      "pinyin": "zhōngyú",
+      "meaning": "finally",
+      "radical": "纟"
+    },
+    {
+      "char": "重要",
+      "pinyin": "zhòngyào",
+      "meaning": "important",
+      "radical": "亻"
+    },
+    {
+      "char": "周末",
+      "pinyin": "zhōumò",
+      "meaning": "weekend",
+      "radical": "口"
+    },
+    {
+      "char": "主要",
+      "pinyin": "zhǔyào",
+      "meaning": "main",
+      "radical": "亻"
+    },
+    {
+      "char": "注意",
+      "pinyin": "zhùyì",
+      "meaning": "pay attention",
+      "radical": "目"
+    },
+    {
+      "char": "自己",
+      "pinyin": "zìjǐ",
+      "meaning": "oneself",
+      "radical": "自"
+    },
+    {
+      "char": "总是",
+      "pinyin": "zǒngshì",
+      "meaning": "always",
+      "radical": "心"
+    },
+    {
+      "char": "嘴",
+      "pinyin": "zuǐ",
+      "meaning": "mouth",
+      "radical": "口"
+    },
+    {
+      "char": "最后",
+      "pinyin": "zuìhòu",
+      "meaning": "last",
+      "radical": "月"
+    },
+    {
+      "char": "最近",
+      "pinyin": "zuìjìn",
+      "meaning": "recently",
+      "radical": "辶"
+    },
+    {
+      "char": "作业",
+      "pinyin": "zuòyè",
+      "meaning": "homework",
+      "radical": "亻"
+    },
+    {
+      "char": "作用",
+      "pinyin": "zuòyòng",
+      "meaning": "function",
+      "radical": "亻"
+    }
+  ]
+}
