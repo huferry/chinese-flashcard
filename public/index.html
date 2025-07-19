@@ -201,7 +201,7 @@
         closeButton.style.fontSize = '1.5rem';
 
         closeButton.addEventListener('click', () => {
-          card.classList.add('hidden')
+          setTimeout(() => card.classList.add('hidden'), 1000);
         });
         
         card.appendChild(closeButton);
