@@ -15,7 +15,7 @@ async function getDictionaries() {
 }
 
 const dictionaries = []
-
+  
 app.use('/', express.static('public'));
 
 app.get('/api/dict/index', (req, res) => {
