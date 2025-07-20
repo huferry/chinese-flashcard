@@ -218,5 +218,59 @@
     }
   });
 </script>
+
+<style>
+  /* Floating button styles */
+  .floating-button {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  .floating-button:hover {
+    background-color: #0056b3;
+  }
+</style>
+
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    // Create the floating button
+    const floatingButton = document.createElement('button');
+    floatingButton.className = 'floating-button';
+    floatingButton.textContent = '➰'; // Shuffle icon
+
+    // Append the button to the body
+    document.body.appendChild(floatingButton);
+
+    // Add click event listener to shuffle cards
+    floatingButton.addEventListener('click', () => {
+      const mainDiv = document.getElementById('main');
+      const cards = Array.from(mainDiv.children);
+
+      // Shuffle the cards array
+      for (let i = cards.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [cards[i], cards[j]] = [cards[j], cards[i]];
+      }
+
+      // Re-append the shuffled cards to the main container
+      mainDiv.innerHTML = '';
+      cards.forEach(card => mainDiv.appendChild(card));
+    });
+  });
+</script>
+
 </body>
 </html>
