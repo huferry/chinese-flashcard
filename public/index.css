@@ -1,0 +1,46 @@
+
+.hidden {
+    display: none !important;
+}
+
+.active-nav {
+    background-color: black;
+    color: white !important;
+}
+
+.card {
+    position: relative;
+    overflow: hidden;
+}
+
+.pinyin, .meaning {
+    position: absolute;
+    left: 0;
+    right: 0;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.pinyin {
+    bottom: 40px;
+    font-size: 1.5rem;
+    color: #555;
+}
+
+.meaning {
+    bottom: 10px;
+    font-size: 1rem;
+    color: gray;
+}
+
+.card:hover .pinyin, .card:hover .meaning {
+    opacity: 1;
+}
+
+#main {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 20px; /* Optional: Add spacing from the navbar */
+}
