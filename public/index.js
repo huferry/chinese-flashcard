@@ -2,74 +2,78 @@ document.addEventListener('DOMContentLoaded', () => {
   const navigationDiv = document.getElementById('navigation');
   const mainDiv = document.getElementById('main');
 
-  fetch('/api/dict/index')
-    .then(response => response.json())
-    .then(data => {
-      if (data.length === 0) return;
+  function displayDictionary(data) {
+    if (data.length === 0) return;
 
-      const nav = document.createElement('nav');
-      nav.className = 'navbar navbar-expand-lg navbar-light bg-light';
+    const nav = document.createElement('nav');
+    nav.className = 'navbar navbar-expand-lg navbar-light bg-light';
 
-      const container = document.createElement('div');
-      container.className = 'container-fluid';
+    const container = document.createElement('div');
+    container.className = 'container-fluid';
 
-      const brand = document.createElement('a');
-      brand.className = 'navbar-brand';
-      brand.href = '#';
-      brand.textContent = 'Dictionaries';
-      container.appendChild(brand);
+    const brand = document.createElement('a');
+    brand.className = 'navbar-brand';
+    brand.href = '#';
+    brand.textContent = 'Dictionaries';
+    container.appendChild(brand);
 
-      const toggleButton = document.createElement('button');
-      toggleButton.className = 'navbar-toggler';
-      toggleButton.type = 'button';
-      toggleButton.setAttribute('data-bs-toggle', 'collapse');
-      toggleButton.setAttribute('data-bs-target', '#navbarNav');
-      toggleButton.innerHTML = '<span class="navbar-toggler-icon"></span>';
-      container.appendChild(toggleButton);
+    const toggleButton = document.createElement('button');
+    toggleButton.className = 'navbar-toggler';
+    toggleButton.type = 'button';
+    toggleButton.setAttribute('data-bs-toggle', 'collapse');
+    toggleButton.setAttribute('data-bs-target', '#navbarNav');
+    toggleButton.innerHTML = '<span class="navbar-toggler-icon"></span>';
+    container.appendChild(toggleButton);
 
-      const collapseDiv = document.createElement('div');
-      collapseDiv.className = 'collapse navbar-collapse';
-      collapseDiv.id = 'navbarNav';
+    const collapseDiv = document.createElement('div');
+    collapseDiv.className = 'collapse navbar-collapse';
+    collapseDiv.id = 'navbarNav';
 
-      const navList = document.createElement('ul');
-      navList.className = 'navbar-nav';
+    const navList = document.createElement('ul');
+    navList.className = 'navbar-nav';
 
-      data.forEach((item, index) => {
-        const navItem = document.createElement('li');
-        navItem.className = 'nav-item';
+    data.forEach((item, index) => navList.appendChild(displayDictionaryItem(item,  index)));
 
-        const navLink = document.createElement('a');
-        navLink.className = 'nav-link';
-        navLink.href = '#';
-        navLink.textContent = item.label;
+    collapseDiv.appendChild(navList);
+    container.appendChild(collapseDiv);
+    nav.appendChild(container);
+    navigationDiv.appendChild(nav);
+  }
+  
+  function displayDictionaryItem(item, index) {
+    const navItem = document.createElement('li');
+    navItem.className = 'nav-item';
 
-        navLink.addEventListener('click', (e) => {
-          e.preventDefault();
-          loadDictionary(item.name);
+    const navLink = document.createElement('a');
+    navLink.className = 'nav-link';
+    navLink.href = '#';
+    navLink.textContent = item.label;
 
-          // Remove active class from all links
-          document.querySelectorAll('.nav-link').forEach(link => {
-            link.classList.remove('active-nav');
-          });
+    navLink.addEventListener('click', (e) => {
+      e.preventDefault();
+      loadDictionary(item.name);
 
-          // Add active class to the clicked link
-          navLink.classList.add('active-nav');
-        });
-
-        navItem.appendChild(navLink);
-        navList.appendChild(navItem);
-
-        if (index === 0) {
-          loadDictionary(item.name);
-          navLink.classList.add('active-nav'); // Set the first item as active initially
-        }
+      document.querySelectorAll('.nav-link').forEach(link => {
+        link.classList.remove('active-nav');
       });
 
-      collapseDiv.appendChild(navList);
-      container.appendChild(collapseDiv);
-      nav.appendChild(container);
-      navigationDiv.appendChild(nav);
-    })
+      navLink.classList.add('active-nav');
+    });
+
+    navItem.appendChild(navLink);
+
+    if (index === 0) {
+      loadDictionary(item.name);
+      navLink.classList.add('active-nav'); // Set the first item as active initially
+    }
+    
+    return navItem
+
+  }
+  
+  fetch('/api/dict/index')
+    .then(response => response.json())
+    .then(displayDictionary)
     .catch(error => console.error('Error fetching navigation data:', error));
 
   function loadDictionary(name) {
