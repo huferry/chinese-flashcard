@@ -1,9 +1,39 @@
 document.addEventListener('DOMContentLoaded', () => {
   const navigationDiv = document.getElementById('navigation');
   const mainDiv = document.getElementById('main');
+  
+  function setCookie(name, value, days) {
+    const date = new Date();
+    date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+    document.cookie = `${name}=${value};expires=${date.toUTCString()};path=/`;
+  }
 
-  function displayDictionary(data) {
-    if (data.length === 0) return;
+  function getCookie(name) {
+    const cookies = document.cookie.split(';');
+    for (let i = 0; i < cookies.length; i++) {
+      const cookie = cookies[i].trim();
+      if (cookie.startsWith(`${name}=`)) {
+        return cookie.substring(name.length + 1);
+      }
+    }
+    return null;
+  }
+  
+  function excludeHanzi(hanzi) {
+    const list = getExcludedHanzi();
+    setCookie('excluded', JSON.stringify([...list, hanzi]), 30);
+  }
+  
+  function getExcludedHanzi() {
+    return JSON.parse(getCookie('excluded') ?? '[]')
+  }
+  
+  function isExcluded(hanzi) {
+    return getExcludedHanzi().includes(hanzi)
+  }
+
+  function displayDictionary(dictionaries) {
+    if (dictionaries.length === 0) return;
 
     const nav = document.createElement('nav');
     nav.className = 'navbar navbar-expand-lg navbar-light bg-light';
@@ -32,7 +62,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const navList = document.createElement('ul');
     navList.className = 'navbar-nav';
 
-    data.forEach((item, index) => navList.appendChild(displayDictionaryItem(item,  index)));
+    dictionaries.forEach((dict, index) => navList.appendChild(displayDictNav(dict,  index)));
 
     collapseDiv.appendChild(navList);
     container.appendChild(collapseDiv);
@@ -40,7 +70,7 @@ document.addEventListener('DOMContentLoaded', () => {
     navigationDiv.appendChild(nav);
   }
   
-  function displayDictionaryItem(item, index) {
+  function displayDictNav(item, index) {
     const navItem = document.createElement('li');
     navItem.className = 'nav-item';
 
@@ -58,11 +88,16 @@ document.addEventListener('DOMContentLoaded', () => {
       });
 
       navLink.classList.add('active-nav');
+      setCookie('dictionary', item.name, 30)
     });
 
     navItem.appendChild(navLink);
 
-    if (index === 0) {
+    const activeDict = getCookie('dictionary');
+    
+    if ((activeDict && item.name === activeDict) 
+      || (!activeDict && index === 0)) {
+      setCookie('dictionary', item.name)
       loadDictionary(item.name);
       navLink.classList.add('active-nav'); // Set the first item as active initially
     }
@@ -133,7 +168,8 @@ document.addEventListener('DOMContentLoaded', () => {
     closeButton.style.fontSize = '1.5rem';
 
     closeButton.addEventListener('click', () => {
-      setTimeout(() => card.classList.add('hidden'), 1000);
+      card.classList.add('hidden');
+      excludeHanzi(entry.char);
     });
 
     card.appendChild(closeButton);
@@ -146,13 +182,18 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   function loadDictionary(name) {
+    const excluded = getExcludedHanzi()
     fetch(`/api/dict/${name}`)
       .then(response => response.json())
       .then(dictionary => {
         dictionary.sort((a, b) => a.radical.localeCompare(b.radical));
         mainDiv.innerHTML = '';
         dictionary.forEach(entry => {
-          mainDiv.appendChild(createCard(entry));
+          const card = createCard(entry)
+          if (excluded.includes(entry.char)) {
+            card.classList.add('hidden')
+          } 
+          mainDiv.appendChild(card);
         });
       })
       .catch(error => console.error('Error fetching dictionary:', error));
