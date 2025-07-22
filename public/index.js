@@ -27,10 +27,6 @@ document.addEventListener('DOMContentLoaded', () => {
   function getExcludedHanzi() {
     return JSON.parse(getCookie('excluded') ?? '[]')
   }
-  
-  function isExcluded(hanzi) {
-    return getExcludedHanzi().includes(hanzi)
-  }
 
   function displayDictionary(dictionaries) {
     if (dictionaries.length === 0) return;
@@ -111,7 +107,7 @@ document.addEventListener('DOMContentLoaded', () => {
     .then(displayDictionary)
     .catch(error => console.error('Error fetching navigation data:', error));
   
-  function createCard(entry) {
+  function createCard({ char, radical, meaning, pinyin}) {
     const card = document.createElement('div');
     card.className = 'card text-center';
     card.style.width = '200px';
@@ -122,7 +118,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Radical element
     const radicalElement = document.createElement('div');
-    radicalElement.textContent = entry.radical;
+    radicalElement.textContent = radical;
     radicalElement.style.position = 'absolute';
     radicalElement.style.top = '10px';
     radicalElement.style.left = '10px';
@@ -130,18 +126,18 @@ document.addEventListener('DOMContentLoaded', () => {
     radicalElement.style.fontSize = '1rem';
 
     const charElement = document.createElement('div');
-    charElement.textContent = entry.char;
+    charElement.textContent = char;
     charElement.style.fontSize = '3rem';
     charElement.style.lineHeight = '300px';
     charElement.style.height = '100%';
 
     const pinyinElement = document.createElement('div');
     pinyinElement.className = 'pinyin';
-    pinyinElement.textContent = entry.pinyin;
+    pinyinElement.textContent = pinyin;
 
     const meaningElement = document.createElement('div');
     meaningElement.className = 'meaning';
-    meaningElement.textContent = entry.meaning;
+    meaningElement.textContent = meaning;
 
     const pronounceButton = document.createElement('button');
     pronounceButton.textContent = '🔊';
@@ -154,7 +150,7 @@ document.addEventListener('DOMContentLoaded', () => {
     pronounceButton.style.fontSize = '1.5rem';
 
     pronounceButton.addEventListener('click', () => {
-      responsiveVoice.speak(entry.char, "Chinese Female");
+      responsiveVoice.speak(char, "Chinese Female");
     });
 
     const closeButton = document.createElement('button');
@@ -169,7 +165,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     closeButton.addEventListener('click', () => {
       card.classList.add('hidden');
-      excludeHanzi(entry.char);
+      excludeHanzi(char);
     });
 
     card.appendChild(closeButton);
